@@ -85,16 +85,19 @@ Copy
 Edit
 src/  
 ├── components/  
-│    ├── Sidebar.js  
+│    ├── CanvasElement.js    
+|    ├── CanvasElement.css 
 │    ├── Canvas.js  
-│    ├── Element.js  
-│    ├── Form.js  
-│    ├── Preview.js  
-├── context/  
-├── hooks/  
-├── utils/  
+|    ├── Canvas.css
+│    ├── ElementsPanel.js 
+|    ├── ElementsPanel.css 
+│    ├── FileUploadArea.js 
+|    ├── FileUploadArea.css
+│    ├── PropertiesPanel.js   
+|    ├── PropertiesPanel.css
 ├── assets/  
-└── App.js  
+└── App.js 
+|__ App.css
 
 
 🌐 Core Components

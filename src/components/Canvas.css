@@ -1,0 +1,135 @@
+.canvas-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #e9ecef;
+  overflow: hidden;
+}
+
+.canvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.canvas-header h3 {
+  margin: 0;
+}
+
+.canvas-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.canvas-controls select {
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.canvas-container {
+  flex: 1;
+  position: relative;
+  padding: 20px;
+  overflow: auto;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-height: calc(100% - 40px);
+}
+
+.canvas-container.drag-over {
+  background-color: #f0f7ff;
+}
+
+.empty-canvas-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #adb5bd;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+}
+.file-drop-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(33, 150, 243, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.file-drop-message {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #2196f3;
+}
+
+.sub-message {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #adb5bd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .canvas-wrapper {
+    height: calc(100vh - 180px); /* Adjust based on header and elements panel height */
+  }
+  
+  .canvas-container {
+    margin: 10px;
+    min-height: calc(100% - 20px);
+  }
+}
+
+.template-button{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  margin-right: 3px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.template-button:hover{
+  background-color: #0056b3;
+}
+.template-button:disabled{
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.device-button{
+  background-color: #28a745;
+  color: white;
+  border: none;
+  margin-right: 3px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+} 
+.device-button:hover{
+  background-color: #218838;
+}
+.device-button:disabled{
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
